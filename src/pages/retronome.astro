@@ -121,34 +121,35 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                     color: white;
                     cursor: pointer;
                     font-family: "Anton", sans-serif;
+                    display: block;
 
-                    > div {
-                        width: 46px;
-                        height: 100%;
-                        padding-top: 230px;
-                        overflow: hidden;
+                    width: 46px;
+                    height: 100%;
+                    padding-top: 230px;
+                    overflow: hidden;
+                    border-left: solid 3px #fff4ec;
+                    border-right: solid 3px #fff4ec;
 
-                        > span {
-                            display: inline-block;
-                            width: 100%;
-                            transform: rotate(90deg) translateY(-200%);
-                            transition: transform 0.3s ease;
-                        }
+                    > span {
+                        display: inline-block;
+                        width: 100%;
+                        transform: rotate(90deg) translateY(-200%);
+                        transition: transform 0.3s ease;
                     }
 
-                    > div.red {
+                    &.red {
                         background: #e65d43;
                     }
 
-                    > div.orange {
+                    &.orange {
                         background: #e59336;
                     }
 
-                    > div.gold {
+                    &.gold {
                         background: #e7b242;
                     }
 
-                    > div.teal {
+                    &.teal {
                         background: #008989;
                     }
                 }
@@ -157,9 +158,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                     display: none;
 
                     + div {
-                        max-width: 6px;
+                        width: 0;
                         overflow: hidden;
-                        transition: max-width 0.5s;
+                        transition: width 0.5s;
 
                         > section {
                             width: 680px;
@@ -184,7 +185,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                     }
 
                     &:checked + div {
-                        max-width: 100%;
+                        width: 100%;
                     }
                 }
             }
@@ -249,9 +250,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     </head>
     <body>
         <main>
-            <label for="contact"
-                ><div class="red"><span>Contact</span></div></label
-            >
+            <label for="contact" class="red"><span>Contact</span></label>
             <input type="radio" name="bands" id="contact" />
 
             <div>
@@ -299,9 +298,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 </section>
             </div>
 
-            <label for="services"
-                ><div class="orange"><span>Services</span></div></label
-            >
+            <label for="services" class="orange"><span>Services</span></label>
             <input type="radio" name="bands" id="services" />
 
             <div>
@@ -311,9 +308,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 </section>
             </div>
 
-            <label for="articles"
-                ><div class="gold"><span>Articles</span></div></label
-            >
+            <label for="articles" class="gold"><span>Articles</span></label>
             <input type="radio" name="bands" id="articles" />
 
             <div>
@@ -323,7 +318,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 </section>
             </div>
 
-            <label for="home"><div class="teal"><span>Home</span></div></label>
+            <label for="home" class="teal"><span>Home</span></label>
             <input type="radio" name="bands" id="home" checked="checked" />
             <div>
                 <section>
