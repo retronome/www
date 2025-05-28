@@ -247,6 +247,82 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 transform: translateY(-2px);
                 box-shadow: 0 5px 15px rgba(230, 93, 67, 0.4);
             } */
+
+            /* Articles Section */
+            .articles-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+                margin: 2rem 0;
+            }
+
+            .article-card {
+                background: rgba(255, 255, 255, 0.9);
+                border: 3px solid #e7b242;
+                border-radius: 12px;
+                padding: 1.5rem;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .article-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(231, 178, 66, 0.3);
+            }
+
+            .article-card h3 {
+                font-family: "Anton", sans-serif;
+                font-size: 1.4rem;
+                color: #333;
+                margin-bottom: 0.5rem;
+                line-height: 1.3;
+            }
+
+            .article-meta {
+                color: #008989;
+                font-weight: bold;
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+
+            .article-excerpt {
+                color: #666;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
+
+            .read-more {
+                color: #e65d43;
+                font-family: "Anton", sans-serif;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+            .read-more:hover {
+                color: #008989;
+            }
+
+            .view-all-articles {
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            .view-all-btn {
+                background: linear-gradient(45deg, #e7b242, #e59336);
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 8px;
+                text-decoration: none;
+                font-family: "Anton", sans-serif;
+                font-size: 1.1rem;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                display: inline-block;
+            }
+
+            .view-all-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(231, 178, 66, 0.4);
+            }
         </style>
     </head>
     <body>
@@ -316,6 +392,47 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 <section>
                     <h1>Articles</h1>
                     <p>Read as much as you like... it's free!</p>
+                    
+                    <div class="articles-grid">
+                        <article class="article-card">
+                            <h3>The AI Revolution: How Machine Learning is Transforming Industries in 2024</h3>
+                            <p class="article-meta">March 15, 2024</p>
+                            <p class="article-excerpt">Exploring the latest developments in artificial intelligence and its impact on healthcare, finance, and education sectors.</p>
+                            <a href="/blog/ai-revolution-2024" class="read-more">Read More →</a>
+                        </article>
+                        
+                        <article class="article-card">
+                            <h3>Web Development Trends 2024: The Future of Frontend and Backend Technologies</h3>
+                            <p class="article-meta">March 28, 2024</p>
+                            <p class="article-excerpt">Discover the latest web development frameworks, tools, and methodologies that are defining modern web applications in 2024.</p>
+                            <a href="/blog/web-development-trends-2024" class="read-more">Read More →</a>
+                        </article>
+                        
+                        <article class="article-card">
+                            <h3>Cybersecurity Trends 2024: Protecting Digital Assets</h3>
+                            <p class="article-meta">January 22, 2024</p>
+                            <p class="article-excerpt">Exploring the latest cybersecurity challenges, emerging threats, and cutting-edge defense strategies shaping digital security in 2024.</p>
+                            <a href="/blog/cybersecurity-trends-2024" class="read-more">Read More →</a>
+                        </article>
+                        
+                        <article class="article-card">
+                            <h3>Green Tech Innovations</h3>
+                            <p class="article-meta">February 14, 2024</p>
+                            <p class="article-excerpt">Sustainable technology solutions that are helping combat climate change and create a greener future.</p>
+                            <a href="/blog/green-tech-innovations" class="read-more">Read More →</a>
+                        </article>
+                        
+                        <article class="article-card">
+                            <h3>Remote Work Evolution</h3>
+                            <p class="article-meta">January 8, 2024</p>
+                            <p class="article-excerpt">How remote work culture has evolved and what the future holds for distributed teams.</p>
+                            <a href="/blog/remote-work-evolution" class="read-more">Read More →</a>
+                        </article>
+                    </div>
+                    
+                    <div class="view-all-articles">
+                        <a href="/blog" class="view-all-btn">View All Articles</a>
+                    </div>
                 </section>
             </div>
 
