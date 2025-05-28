@@ -89,29 +89,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 }
             }
 
-            html {
-                height: 100%;
-
-                * {
-                    margin: 0px;
-                    padding: 0px;
-                }
+            html * {
+                margin: 0px;
+                padding: 0px;
             }
 
             body {
                 background-color: #fff4ec;
-                height: 100%;
             }
 
             main {
                 position: relative;
                 display: flex;
                 width: 920px;
-                /* max-width: calc(100% - 2em); */
                 gap: 0;
                 margin: auto;
                 height: 100%;
-                /* background: cyan; */
 
                 &:has(label:hover) > label span {
                     transform: rotate(90deg) translateY(0);
@@ -124,7 +117,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                     display: block;
 
                     width: 46px;
-                    height: 100%;
+                    min-height: 100dvh;
                     padding-top: 230px;
                     overflow: hidden;
                     border-left: solid 3px #fff4ec;
