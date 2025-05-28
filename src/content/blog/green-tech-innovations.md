@@ -1,6 +1,6 @@
 ---
 title: 'Green Tech Innovations: Sustainable Solutions for a Carbon-Neutral Future'
-description: 'Discover the latest breakthroughs in renewable energy, sustainable materials, and eco-friendly technologies shaping our planet's future.'
+description: 'Discover the latest breakthroughs in renewable energy, sustainable materials, and eco-friendly technologies shaping our planet''s future.'
 pubDate: 'Apr 02 2024'
 heroImage: '/blog-placeholder-2.jpg'
 ---
