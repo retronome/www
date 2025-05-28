@@ -74,7 +74,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                     width: 0;
                 }
                 to {
-                    width: 100%;
+                    width: 11ch;
                 }
             }
 
@@ -174,9 +174,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                             &:last-of-type h1 {
                                 overflow: hidden;
                                 border-right: 2px solid;
+                                --text-width: 8ch;
 
                                 animation:
-                                    typing 1.5s steps(10, end) forwards,
+                                    typing 1.5s steps(11, end) forwards,
                                     blink 1.5s step-end forwards;
 
                                 transition: border-right 1.5s 0;
